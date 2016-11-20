@@ -14,6 +14,7 @@ class Article extends Component {
     render() {
         const { article } = this.props;
         const body = this.state.isOpen ? <p>{article.text}</p> : null;
+        // data - не очень хороший выбор названия
         const comments = this.state.isOpen ? <CommentsList data={article.comments}/> : null;
         return (
             <section>
