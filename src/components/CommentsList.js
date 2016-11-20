@@ -13,6 +13,7 @@ class CommentsList extends React.Component {
     render() {
         const commentsListData = this.props.data;
         const commentItems = this.state.isOpen ?
+              //аналогично - data поменяй на comment, например
         commentsListData.map(commentData => <li key={commentData.id}><Comment data={commentData}/></li>) : null;
         const commentsHeader = this.state.isOpen ? 'Hide Comments' : 'Show Comments';
 
